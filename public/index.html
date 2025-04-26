@@ -1,234 +1,164 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Economía Monetaria y Financiera</title>
+  <title>Inicio · Economía Monetaria y Financiera</title>
 
   <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-
   <!-- Iconos -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
-
-  <!-- CSS compilado (tu propio estilo) -->
+  <!-- CSS Global -->
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-<body>
 
-  <!-- ======= Navbar ======= -->
+<body>
+  <!-- ============ NAVBAR ============ -->
   <header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top c-navbar">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#hero">Monetaria</a>
+      <a class="navbar-brand fw-bold" href="index.html">Monetaria</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <nav id="mainNav" class="collapse navbar-collapse">
         <ul class="navbar-nav ms-auto gap-lg-4">
-          <li class="nav-item"><a class="nav-link" href="#teoria">Teoría&nbsp;y&nbsp;Política</a></li>
-          <li class="nav-item"><a class="nav-link" href="#crisis">Crisis&nbsp;y&nbsp;LoR</a></li>
-          <li class="nav-item"><a class="nav-link" href="#ataques">Ataques&nbsp;Especulativos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#regulacion">Regulación</a></li>
-          <li class="nav-item"><a class="nav-link" href="#fundamentos">Fundamentos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#mercados">Mercados&nbsp;Globales</a></li>
-          <li class="nav-item"><a class="nav-link" href="#cartera">Cartera&nbsp;y&nbsp;Riesgos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#derivados">Derivados</a></li>
-          <li class="nav-item"><a class="nav-link" href="#econometria">Econometría</a></li>
+          <li class="nav-item"><a class="nav-link" href="teoria.html">Teoría</a></li>
+          <li class="nav-item"><a class="nav-link" href="crisis.html">Crisis</a></li>
+          <li class="nav-item"><a class="nav-link" href="ataques.html">Ataques</a></li>
+          <li class="nav-item"><a class="nav-link" href="regulacion.html">Regulación</a></li>
+          <li class="nav-item"><a class="nav-link" href="fundamentos.html">Fundamentos</a></li>
+          <li class="nav-item"><a class="nav-link" href="mercados.html">Mercados</a></li>
+          <li class="nav-item"><a class="nav-link" href="cartera.html">Cartera</a></li>
+          <li class="nav-item"><a class="nav-link" href="derivados.html">Derivados</a></li>
+          <li class="nav-item"><a class="nav-link" href="econometria.html">Econometría</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- ======= Hero ======= -->
-  <section class="c-hero d-flex align-items-center justify-content-center text-center text-white" id="hero">
-    <div class="container">
-      <h1 class="display-4 fw-bold">Economía Monetaria y Financiera</h1>
-      <p class="lead mb-4">
-        Un recorrido divulgativo por los temas clave que definen el dinero y los mercados modernos
-      </p>
-      <a href="#teoria" class="btn btn-primary btn-lg shadow-lg">Comenzar</a>
+  <!-- ============ HERO ============ -->
+  <section class="c-hero" id="hero">
+    <div>
+      <h1 class="fw-bold">Economía Monetaria y Financiera</h1>
+      <p class="lead mb-4">Conocimiento riguroso para comprender y anticipar la dinámica del dinero y los mercados.</p>
+      <a href="#mision" class="btn btn-primary btn-lg">Conoce nuestra misión</a>
     </div>
   </section>
 
-  <!-- ======= 1. Teoría y Políticas Monetarias ======= -->
-  <section class="container py-5" id="teoria">
-    <h2 class="mb-4 text-center">Teoría y Políticas Monetarias</h2>
-    <p class="fs-5">
-      La política monetaria moderna combina reglas (p. ej., objetivo de inflación) con
-      elementos de discreción para responder a choques imprevistos. Desde 2022,
-      la Reserva Federal ha mantenido la tasa de fondos federales en torno al 5.25-5.5 %
-      para frenar la inflación post-pandemia, señalando que dicho rango está cerca del
-      «pico» del ciclo de endurecimiento :contentReference[oaicite:0]{index=0}.
-    </p>
+  <!-- ============ CONTENIDO GENERAL ============ -->
+  <main class="container py-5">
+    <!-- MISIÓN & VISIÓN -->
+    <section id="mision" class="grid-2 mb-5">
+      <div>
+        <h2>Misión</h2>
+        <p>
+          Proporcionar recursos divulgativos y académicos de alta calidad que permitan a estudiantes,
+          profesionales y entusiastas dominar los principios de la economía monetaria y financiera
+          contemporánea, fomentando la toma de decisiones informadas y responsables.
+        </p>
+      </div>
+      <div>
+        <h2>Visión</h2>
+        <p>
+          Convertirnos en la plataforma en español de referencia para el estudio interdisciplinario
+          de políticas monetarias, estabilidad financiera y gestión de riesgos, integrando investigación,
+          tecnología y pedagogía interactiva.
+        </p>
+      </div>
+    </section>
 
-    <ul>
-      <li><strong>Modelo IS-LM-BP / DSGE</strong>: describe la interacción entre la tasa de interés,
-          la producción y los flujos de capital.</li>
-      <li><strong>Herramientas no convencionales</strong>: QE, forward guidance y tipos negativos.</li>
-      <li><strong>Desafíos 2025</strong>: coordinación fiscal-monetaria y resiliencia frente a
-          shocks de oferta climáticos.</li>
-    </ul>
-  </section>
+    <!-- OBJETIVOS ESTRATÉGICOS -->
+    <section class="mb-5">
+      <h2 class="mb-4 text-center">Objetivos Estratégicos</h2>
+      <ol class="timeline">
+        <li>
+          <h5 class="mb-1">Difusión accesible</h5>
+          <p class="mb-0">Traducir teorías complejas en materiales claros, prácticos y gratuitos.</p>
+        </li>
+        <li>
+          <h5 class="mb-1">Actualización continua</h5>
+          <p class="mb-0">Incorporar los hallazgos más recientes de bancos centrales, FMI y literatura académica.</p>
+        </li>
+        <li>
+          <h5 class="mb-1">Interactividad</h5>
+          <p class="mb-0">Complementar textos con simulaciones, videos y ejercicios aplicados.</p>
+        </li>
+        <li>
+          <h5 class="mb-1">Comunidad</h5>
+          <p class="mb-0">Fomentar foros de debate y colaboración para resolver desafíos financieros reales.</p>
+        </li>
+      </ol>
+    </section>
 
-  <!-- ======= 2. Crisis Financieras y Prestamista de Última Instancia ======= -->
-  <section class="bg-light py-5" id="crisis">
-    <div class="container">
-      <h2 class="text-center mb-4">Crisis Financieras y Prestamista de Última Instancia</h2>
-      <p class="fs-5">
-        En marzo de 2023 la quiebra de Silicon Valley Bank reactivó la función de
-        prestamista de última instancia (LoR) de la Fed, que inyectó liquidez mediante
-        líneas de crédito de emergencia para evitar contagio :contentReference[oaicite:1]{index=1}.
-      </p>
-
-      <div class="row g-4">
-        <div class="col-md-6">
-          <h3 class="h5">Lo que hace el LoR</h3>
-          <ol>
-            <li>Proveer liquidez temporal a bancos solventes.</li>
-            <li>Pedir colateral de alta calidad.</li>
-            <li>Cobrar una penalización para reducir riesgo moral.</li>
-          </ol>
+    <!-- VIDEOS DESTACADOS -->
+    <section class="mb-5">
+      <h2 class="text-center mb-4">Aprende en 10 minutos</h2>
+      <div class="grid-2">
+        <div class="resp-video">
+          <iframe src="https://www.youtube.com/embed/2XNZBeJH7jI"
+                  title="Interest Rates Explained" allowfullscreen></iframe>
         </div>
-        <div class="col-md-6">
-          <h3 class="h5">Casos históricos</h3>
-          <ul>
-            <li>Reino Unido 2008: rescate a Northern Rock.</li>
-            <li>Eurozona 2012: LTRO y promesa «whatever it takes» del BCE.</li>
-            <li>EE. UU. 2023: Bank Term Funding Program.</li>
-          </ul>
+        <div class="resp-video">
+          <iframe src="https://www.youtube.com/embed/PuFFy6l4N6A"
+                  title="Bank Runs & Lender of Last Resort" allowfullscreen></iframe>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ======= 3. Enfoques Analíticos de Ataques Especulativos y Ciclos ======= -->
-  <section class="container py-5" id="ataques">
-    <h2 class="mb-4 text-center">Ataques Especulativos y Ciclos Cambiarios</h2>
-    <p class="fs-5">
-      Los modelos de <em>first-generation</em> explican crisis por fundamentos
-      fiscales; los de <em>second-generation</em>, por expectativas
-      auto-cumplidas. El FMI aplicó este marco a México 1994, encontrando
-      probabilidad alta de cambio de régimen meses antes del colapso del peso
-      :contentReference[oaicite:2]{index=2}.
-    </p>
+    <!-- INSIGNIAS DE CONTENIDO -->
+    <section class="mb-5">
+      <h2 class="text-center mb-4">Explora nuestras secciones</h2>
+      <div class="grid-3">
+        <!-- Cada tarjeta dirige a la página específica -->
+        <article class="card card-hover">
+          <div class="card-body text-center">
+            <i class="bi bi-bank2 display-6 text-primary"></i>
+            <h3 class="h5 mt-3">Teoría Monetaria</h3>
+            <p class="small">Modelos IS-LM, DSGE y objetivos de inflación.</p>
+            <a href="teoria.html" class="stretched-link" aria-label="Ir a Teoría"></a>
+          </div>
+        </article>
 
-    <blockquote class="blockquote">
-      «Una caída de reservas internacionales del 10 % eleva 15 p.p.
-      la probabilidad de ataque especulativo en mercados emergentes».
-    </blockquote>
-  </section>
+        <article class="card card-hover">
+          <div class="card-body text-center">
+            <i class="bi bi-shield-lock display-6 text-primary"></i>
+            <h3 class="h5 mt-3">Estabilidad Financiera</h3>
+            <p class="small">Crisis, prestamista de última instancia y Basilea.</p>
+            <a href="crisis.html" class="stretched-link" aria-label="Ir a Crisis"></a>
+          </div>
+        </article>
 
-  <!-- ======= 4. Regulación Monetaria y Financiera ======= -->
-  <section class="bg-light py-5" id="regulacion">
-    <div class="container">
-      <h2 class="text-center mb-4">Regulación Monetaria y Financiera</h2>
-      <p class="fs-5">
-        El paquete «Basel III Endgame» armoniza la medición de activos ponderados
-        por riesgo (RWA) y exige más capital de calidad 1, rediseñando incentivos
-        de los bancos para 2025 :contentReference[oaicite:3]{index=3}.
-      </p>
-      <ul>
-        <li><strong>Ratio de apalancamiento</strong> y colchones anticíclicos.</li>
-        <li><strong>Nuevos límites al riesgo de mercado</strong> para instrumentos exóticos.</li>
-        <li><strong>Finanzas sostenibles</strong>: integración de criterios ESG en la
-            supervisión.</li>
-      </ul>
-    </div>
-  </section>
+        <article class="card card-hover">
+          <div class="card-body text-center">
+            <i class="bi bi-graph-up-arrow display-6 text-primary"></i>
+            <h3 class="h5 mt-3">Mercados Globales</h3>
+            <p class="small">Flujos de capital, divisas y productos derivados.</p>
+            <a href="mercados.html" class="stretched-link" aria-label="Ir a Mercados"></a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
 
-  <!-- ======= 5. Fundamentos de Economía Financiera ======= -->
-  <section class="container py-5" id="fundamentos">
-    <h2 class="mb-4 text-center">Fundamentos de Economía Financiera</h2>
-    <p class="fs-5">
-      Esta disciplina estudia cómo se asignan recursos en el tiempo bajo incertidumbre.
-      Sus pilares son la <strong>Teoría de Portafolio</strong> y el
-      <strong>Modelo CAPM</strong>, que relaciona riesgo sistemático y rendimientos
-      esperados :contentReference[oaicite:4]{index=4}.
-    </p>
-
-    <ul>
-      <li>Eficiencia del mercado y hipótesis de expectativas racionales.</li>
-      <li>Valor del dinero en el tiempo y tasas de descuento.</li>
-      <li>Relación riesgo–rendimiento y diversificación.</li>
-    </ul>
-  </section>
-
-  <!-- ======= 6. Mercados Financieros Internacionales ======= -->
-  <section class="bg-light py-5" id="mercados">
-    <div class="container">
-      <h2 class="text-center mb-4">Mercados Financieros Internacionales</h2>
-      <p class="fs-5">
-        En 2025 los índices bursátiles fuera de EE. UU. superan al S&P 500: el MSCI USA
-        cae 11 % mientras el MSCI ex-US sube 4 %, la mayor brecha desde 1993,
-        reflejando temores de estanflación en EE. UU. y mayores estímulos en Europa
-        y Asia :contentReference[oaicite:5]{index=5}.
-      </p>
-
-      <ul>
-        <li><strong>Flujos de capital</strong> guiados por política monetaria diferencial.</li>
-        <li><strong>Mercado de divisas</strong>: volatilidad del dólar frente a euro y yuan.</li>
-        <li><strong>Indicadores adelantados</strong>: índices PMI y spreads soberanos.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- ======= 7. Administración de Cartera y Riesgos ======= -->
-  <section class="container py-5" id="cartera">
-    <h2 class="mb-4 text-center">Administración de Cartera y Riesgos</h2>
-    <p class="fs-5">
-      La gestión de riesgos es un proceso dinámico: identificar, medir y mitigar
-      amenazas al valor del portafolio. Medidas clave: <em>tracking error</em>,
-      desviación estándar y <em>drawdown</em>. Estrategias: diversificación, coberturas y
-      presupuestos de riesgo :contentReference[oaicite:6]{index=6}.
-    </p>
-  </section>
-
-  <!-- ======= 8. Mercados de Derivados ======= -->
-  <section class="bg-light py-5" id="derivados">
-    <div class="container">
-      <h2 class="text-center mb-4">Mercados de Derivados</h2>
-      <p class="fs-5">
-        Los derivados son contratos cuyo valor depende de un activo subyacente.
-        <strong>Futuros</strong> obligan a comprar/vender en una fecha y precio fijados;
-        <strong>opciones</strong> otorgan un derecho, no obligación. Swaps y forwards
-        completan la paleta :contentReference[oaicite:7]{index=7}.
-      </p>
-      <ul>
-        <li>Usos: cobertura de precio, especulación y arbitraje.</li>
-        <li>Riesgos: apalancamiento y efecto «cola gorda».</li>
-        <li>Reformas post-2008: compensación central y límites de posición.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- ======= 9. Econometría Monetaria y Financiera ======= -->
-  <section class="container py-5" id="econometria">
-    <h2 class="mb-4 text-center">Econometría Monetaria y Financiera</h2>
-    <p class="fs-5">
-      La econometría convierte la teoría económica en modelos cuantificables
-      combinando estadística y datos. Modelos VAR, GARCH y cointegración
-      son fundamentales para pronosticar inflación o volatilidad :contentReference[oaicite:8]{index=8}.
-    </p>
-  </section>
-
-  <!-- ======= Footer ======= -->
-  <footer class="bg-dark text-white py-4 c-footer" id="contacto">
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-dark text-white py-4 c-footer">
     <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
-      <p class="mb-0">&copy; 2025 Monetaria · Todos los derechos reservados.</p>
+      <p class="mb-0">© 2025 Monetaria.</p>
       <nav>
-        <a href="https://github.com/Jeshua-Romero-Guadarrama/BEDUJava" class="text-white text-decoration-none me-3">
-          <i class="bi bi-github"></i> GitHub
-        </a>
-        <a href="jeshua.romero@outlook.com" class="text-white text-decoration-none">
-          <i class="bi bi-envelope-fill"></i> Contacto
-        </a>
+        <a href="https://github.com/tu-usuario/monetaria-multi" class="text-white me-3">
+          <i class="bi bi-github"></i></a>
+        <a href="mailto:info@monetaria.edu" class="text-white">
+          <i class="bi bi-envelope-fill"></i></a>
       </nav>
     </div>
   </footer>
 
-  <!-- BS JS -->
+  <!-- Bootstrap JS bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/app.js"></script>
 </body>
+
 </html>
