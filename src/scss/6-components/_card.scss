@@ -1,0 +1,9 @@
+.c-card {
+    border: none;
+    transition: transform .3s ease, box-shadow .3s ease;
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 1rem 2rem -.25rem rgba($dark, .15);
+    }
+  }
+  

@@ -1,0 +1,22 @@
+.c-grid {
+    display: grid;
+    gap: 1.5rem;
+    @include media(md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include media(lg) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  .c-module {
+    padding: 1.5rem;
+    background: $light;
+    border-left: .5rem solid $primary;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    &__title { font-size: 1.1rem; }
+    &__meta { list-style: none; font-size: .9rem; }
+  }
+  

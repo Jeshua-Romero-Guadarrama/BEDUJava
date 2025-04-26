@@ -1,0 +1,6 @@
+.c-navbar {
+    backdrop-filter: blur(4px);
+    transition: background-color .4s ease;
+    &.scrolled { background-color: rgba($dark, 0.8); }
+  }
+  

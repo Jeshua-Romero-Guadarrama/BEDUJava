@@ -1,0 +1,15 @@
+@mixin flex-center($dir: row) {
+    display: flex;
+    flex-direction: $dir;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @mixin media($breakpoint) {
+    @if $breakpoint == md {
+      @media (min-width: 768px) { @content; }
+    } @else if $breakpoint == lg {
+      @media (min-width: 992px) { @content; }
+    }
+  }
+  

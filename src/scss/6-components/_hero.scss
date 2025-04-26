@@ -1,0 +1,6 @@
+@use 'sass:color';
+
+.c-hero a.btn-primary {
+  background-color: $secondary;
+  &:hover { background-color: color.adjust($secondary, $lightness: -5%); }
+}

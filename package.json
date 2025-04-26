@@ -1,0 +1,11 @@
+{
+    "name": "monetaria-landing",
+    "version": "1.0.0",
+    "description": "Landing page de Economía Monetaria y Financiera",
+    "scripts": {
+      "sass": "sass --watch src/scss:public/assets/css --style=compressed"
+    },
+    "devDependencies": {
+      "sass": "^1.78.0"
+    }
+  }
