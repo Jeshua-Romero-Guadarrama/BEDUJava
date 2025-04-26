@@ -63,14 +63,29 @@ h3 { font-size: 1.25rem; }
   3. HERO (centrado + ajuste nav)
 ─────────────────────────*/
 .c-hero {
-  /* deja de ocupar todo el viewport */
-  min-height: auto;            /* se adapta al contenido            */
-  padding: calc(var(--nav-h) + 3rem) 1rem 4rem;
-  margin-top: 0;               /* ya compensamos con padding arriba */
-  background: var(--clr-light);/* color liso (puedes cambiarlo)     */
-  color: var(--clr-dark);      /* texto oscuro sobre fondo claro    */
-  text-shadow: none;           /* quita sombra innecesaria          */
+  margin-top: var(--nav-h);               /* separa de la barra fija           */
+  min-height: 30vh;                       /* ocupa al menos 30 % del viewport  */
+  padding: 3rem 1rem 4rem;                /* aire interior                     */
+  background: var(--clr-light);           /* fondo liso                        */
+  color: var(--clr-dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-shadow: none;
+  
+  /* al navegar a #hero deja sitio para la navbar */
+  scroll-margin-top: calc(var(--nav-h) + 1rem);
 }
+
+.c-hero h1 {
+  font-size: calc(1.75rem + 2vw);
+  line-height: 1.2;
+  margin-bottom: .75rem;
+}
+
+.c-hero .btn { margin-top: 1.25rem; }
 
 /*─────────────────────────
   4. FLEX & GRID HELPERS
@@ -123,28 +138,27 @@ h3 { font-size: 1.25rem; }
 /*─────────────────────────
   6. VIDEO RESPONSIVO
 ─────────────────────────*/
-.resp-video {
-  position: relative;
-  aspect-ratio: 16 / 9;          
-  width: 100%;
-  overflow: hidden;              
-  border-radius: var(--radius);
-  box-shadow: 0 .75rem 1.5rem -0.5rem rgba(0,0,0,.25);
+.resp-video{
+  position:relative !important;
+  aspect-ratio:16/9 !important;
+  width:100% !important;
+  overflow:hidden !important;
+  border-radius:var(--radius) !important;
+  box-shadow:0 .75rem 1.5rem -.5rem rgba(0,0,0,.25) !important;
 }
 
-/* Fallback para navegadores sin aspect-ratio */
-@supports not (aspect-ratio: 16 / 9) {
-  .resp-video { padding-bottom: 56.25%; height: 0; }
+@supports not (aspect-ratio:16/9){
+  .resp-video{padding-bottom:56.25% !important; height:0 !important;}
 }
 
 .resp-video iframe,
-.resp-video video {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;         
-  border-radius: inherit;
+.resp-video video{
+  position:absolute !important;
+  inset:0 !important;
+  width:100% !important;
+  height:100% !important;
+  border:0 !important;
+  border-radius:inherit !important;
 }
 
 /*─────────────────────────
