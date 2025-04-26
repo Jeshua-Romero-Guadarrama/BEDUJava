@@ -60,35 +60,7 @@ h3 { font-size: 1.25rem; }
 .c-navbar .nav-link:focus { color: var(--clr-secondary); }
 
 /*─────────────────────────
-  3. HERO (centrado + ajuste nav)
-─────────────────────────*/
-.c-hero {
-  margin-top: var(--nav-h);               /* separa de la barra fija           */
-  min-height: 30vh;                       /* ocupa al menos 30 % del viewport  */
-  padding: 3rem 1rem 4rem;                /* aire interior                     */
-  background: var(--clr-light);           /* fondo liso                        */
-  color: var(--clr-dark);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  text-shadow: none;
-  
-  /* al navegar a #hero deja sitio para la navbar */
-  scroll-margin-top: calc(var(--nav-h) + 1rem);
-}
-
-.c-hero h1 {
-  font-size: calc(1.75rem + 2vw);
-  line-height: 1.2;
-  margin-bottom: .75rem;
-}
-
-.c-hero .btn { margin-top: 1.25rem; }
-
-/*─────────────────────────
-  4. FLEX & GRID HELPERS
+  3. FLEX & GRID HELPERS
 ─────────────────────────*/
 .flex-center {
   display: flex;
@@ -103,7 +75,7 @@ h3 { font-size: 1.25rem; }
 @media (min-width: 992px) { .grid-3 { grid-template-columns: repeat(3, 1fr); } }
 
 /*─────────────────────────
-  5. CARDS, TIMELINE & MISC
+  4. CARDS, TIMELINE & MISC
 ─────────────────────────*/
 .card-hover { transition: transform .3s, box-shadow .3s; }
 .card-hover:hover {
@@ -136,7 +108,7 @@ h3 { font-size: 1.25rem; }
 }
 
 /*─────────────────────────
-  6. VIDEO RESPONSIVO
+  5. VIDEO RESPONSIVO
 ─────────────────────────*/
 .resp-video{
   position:relative !important;
@@ -162,7 +134,7 @@ h3 { font-size: 1.25rem; }
 }
 
 /*─────────────────────────
-  7. FOOTER
+  6. FOOTER
 ─────────────────────────*/
 .c-footer a:hover {
   color: var(--clr-secondary) !important;
