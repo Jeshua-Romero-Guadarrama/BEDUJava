@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Administración de Cartera y Riesgos · Monetaria</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+
+  <!-- CSS global compilado -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top c-navbar">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Monetaria</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <nav id="mainNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto gap-lg-4">
+          <li class="nav-item"><a class="nav-link" href="teoria.html">Teoría</a></li>
+          <li class="nav-item"><a class="nav-link" href="crisis.html">Crisis</a></li>
+          <li class="nav-item"><a class="nav-link" href="ataques.html">Ataques</a></li>
+          <li class="nav-item"><a class="nav-link" href="regulacion.html">Regulación</a></li>
+          <li class="nav-item"><a class="nav-link" href="fundamentos.html">Fundamentos</a></li>
+          <li class="nav-item"><a class="nav-link" href="mercados.html">Mercados</a></li>
+          <li class="nav-item"><a class="nav-link active" href="cartera.html">Cartera</a></li>
+          <li class="nav-item"><a class="nav-link" href="derivados.html">Derivados</a></li>
+          <li class="nav-item"><a class="nav-link" href="econometria.html">Econometría</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="c-hero">
+    <div>
+      <h1 class="fw-bold display-4">Administración de Cartera y Riesgos</h1>
+      <p class="lead">Del modelo de Markowitz a los algoritmos cuantitativos de asignación dinámica.</p>
+    </div>
+  </section>
+
+  <!-- ============ MAIN ============ -->
+  <main class="container py-5" id="contenido">
+    <!-- INTRO -->
+    <article class="mb-5">
+      <h2>1&nbsp;·&nbsp;Objetivo de la gestión de portafolio</h2>
+      <p>
+        El propósito central es maximizar el retorno ajustado por riesgo dentro de restricciones de liquidez, horizonte
+        y regulaciones. Se apoya en tres pilares: <strong>diversificación eficiente</strong>, <strong>medición de
+        riesgos</strong> y <strong>gobernanza</strong>. Desde fondos soberanos hasta <em>robo-advisors</em>, los
+        principios
+        cuantitativos de la Teoría Moderna de Portafolio siguen vigentes, aunque ahora se complementan con aprendizaje
+        automático y análisis de escenarios climáticos.
+      </p>
+    </article>
+
+    <!-- GRID CONCEPTOS -->
+    <section class="grid-2 mb-5">
+      <div>
+        <h3>Conceptos clave</h3>
+        <ul>
+          <li><strong>Frontera eficiente:</strong> conjunto de carteras con mínimo riesgo para cada nivel de
+            retorno.</li>
+          <li><strong>Alfa y Beta:</strong> rendimiento idiosincrático y sensibilidad al mercado.</li>
+          <li><strong>Tracking error:</strong> desviación frente a un benchmark.</li>
+          <li><strong>ISR / ESG:</strong> integración de factores sostenibles en el proceso de inversión.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Métricas de riesgo</h3>
+        <table class="table table-bordered table-sm">
+          <thead>
+            <tr>
+              <th>Métrica</th>
+              <th>Interpretación</th>
+              <th>Ventaja</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Volatilidad</td>
+              <td>Desviación estándar del retorno</td>
+              <td>Sencilla &nbsp;<i class="bi bi-graph-up"></i></td>
+            </tr>
+            <tr>
+              <td>VaR&nbsp;95&nbsp;%</td>
+              <td>Pérdida máxima esperada</td>
+              <td>Alinea capital regulatorio</td>
+            </tr>
+            <tr>
+              <td>CVaR</td>
+              <td>Pérdida promedio en cola</td>
+              <td>Captura cola gorda</td>
+            </tr>
+            <tr>
+              <td>Drawdown</td>
+              <td>Caída pico-valle</td>
+              <td>Fácil comunicación</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- VIDEO -->
+    <div class="flex-center mb-5">
+      <div class="resp-video">
+        <iframe src="https://www.youtube.com/embed/oRQ2PcqYqPc"
+          title="Portfolio Management Basics" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- GRID-3 ESTRATEGIAS -->
+    <h2 class="mb-4">2&nbsp;·&nbsp;Estrategias de asignación</h2>
+    <div class="grid-3 mb-5">
+      <article class="card card-hover">
+        <div class="card-body">
+          <h4 class="card-title">Asignación estática</h4>
+          <p>Rebalanceo periódico para mantener pesos fijos. Adecuado para fondos de pensiones con horizonte largo.</p>
+        </div>
+      </article>
+      <article class="card card-hover">
+        <div class="card-body">
+          <h4 class="card-title">Asignación táctica</h4>
+          <p>Ajusta pesos según valoraciones relativas y ciclo macro. Usa indicadores como CAPE y PMI global.</p>
+        </div>
+      </article>
+      <article class="card card-hover">
+        <div class="card-body">
+          <h4 class="card-title">Paridad de riesgo</h4>
+          <p>Distribuye presupuesto de riesgo equitativamente entre clases
+            (<em>risk parity</em>). Reduce sensibilidad a un solo activo.</p>
+        </div>
+      </article>
+    </div>
+
+    <!-- TIMELINE EVOLUCIÓN -->
+    <h2 class="mb-4">3&nbsp;·&nbsp;Evolución de la disciplina</h2>
+    <ol class="timeline mb-5">
+      <li>
+        <h5 class="mb-1">1952&nbsp;·&nbsp;Markowitz</h5>
+        <p class="mb-0">Publica “Portfolio Selection”: varianza como única medida de riesgo.</p>
+      </li>
+      <li>
+        <h5 class="mb-1">1964&nbsp;·&nbsp;CAPM (Sharpe)</h5>
+        <p class="mb-0">Introduce beta como factor sistemático y línea de mercado de valores.</p>
+      </li>
+      <li>
+        <h5 class="mb-1">1993&nbsp;·&nbsp;Fama-French</h5>
+        <p class="mb-0">Extiende CAPM con factores tamaño y valor.</p>
+      </li>
+      <li>
+        <h5 class="mb-1">2011&nbsp;·&nbsp;Machine Learning</h5>
+        <p class="mb-0">Modelos de <em>tree boosting</em> y redes neuronales para selección de activos.</p>
+      </li>
+      <li>
+        <h5 class="mb-1">2024&nbsp;·&nbsp;Finanzas climáticas</h5>
+        <p class="mb-0">Stress tests de transición energética y escenarios de carbono.</p>
+      </li>
+    </ol>
+
+    <!-- CASO DE ESTUDIO -->
+    <section class="mb-5">
+      <h2>4&nbsp;·&nbsp;Caso práctico: Fondo mixto 60/40</h2>
+      <div class="grid-2">
+        <div>
+          <p>
+            La asignación clásica 60&nbsp;% renta variable y 40&nbsp;% renta fija sufrió en 2022 la peor
+            rentabilidad conjunta en 50 años debido a la subida sincronizada de tasas. Para
+            restaurar el perfil riesgo/retorno se propuso:
+          </p>
+          <ul>
+            <li>Incorporar <strong>bonos ligados a inflación</strong>.</li>
+            <li>Añadir un 10&nbsp;% en <strong>private credit</strong> con liquidez mensual.</li>
+            <li>Hedging con <strong>futuros de duración corta</strong>.</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="h5">Resultado simulado (2018-2024)</h3>
+          <table class="table table-sm table-bordered">
+            <thead>
+              <tr>
+                <th>Portafolio</th>
+                <th>Retorno&nbsp;anual</th>
+                <th>Volatilidad</th>
+                <th>Sharpe</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>60/40 Clásico</td>
+                <td>5.2&nbsp;%</td>
+                <td>9.1&nbsp;%</td>
+                <td>0.43</td>
+              </tr>
+              <tr>
+                <td>60/30/10 (TIPs/PC)</td>
+                <td>6.1&nbsp;%</td>
+                <td>8.2&nbsp;%</td>
+                <td>0.56</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-dark text-white py-4 c-footer">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <p class="mb-0">&copy; 2025 Monetaria · Todos los derechos reservados.</p>
+      <nav>
+        <a href="https://github.com/tu-usuario/monetaria-multi" class="text-white text-decoration-none me-3">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="mailto:info@monetaria.edu" class="text-white text-decoration-none">
+          <i class="bi bi-envelope-fill"></i>
+        </a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

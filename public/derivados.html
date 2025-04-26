@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mercados de Derivados · Monetaria</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  <!-- CSS global compilado -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top c-navbar">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Monetaria</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <nav id="mainNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto gap-lg-4">
+          <li class="nav-item"><a class="nav-link" href="teoria.html">Teoría</a></li>
+          <li class="nav-item"><a class="nav-link" href="crisis.html">Crisis</a></li>
+          <li class="nav-item"><a class="nav-link" href="ataques.html">Ataques</a></li>
+          <li class="nav-item"><a class="nav-link" href="regulacion.html">Regulación</a></li>
+          <li class="nav-item"><a class="nav-link" href="fundamentos.html">Fundamentos</a></li>
+          <li class="nav-item"><a class="nav-link" href="mercados.html">Mercados</a></li>
+          <li class="nav-item"><a class="nav-link" href="cartera.html">Cartera</a></li>
+          <li class="nav-item"><a class="nav-link active" href="derivados.html">Derivados</a></li>
+          <li class="nav-item"><a class="nav-link" href="econometria.html">Econometría</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="c-hero">
+    <div>
+      <h1 class="fw-bold display-4">Mercados de Derivados</h1>
+      <p class="lead">Futuros, opciones y swaps como herramientas de cobertura, especulación y arbitraje.</p>
+    </div>
+  </section>
+
+  <!-- ============ MAIN ============ -->
+  <main class="container py-5" id="contenido">
+    <!-- INTRO -->
+    <article class="mb-5">
+      <h2>1&nbsp;·&nbsp;Naturaleza y funciones</h2>
+      <p>
+        Un derivado es un contrato cuyo valor depende del precio de un activo subyacente
+        o de un índice de referencia. Permiten transferir riesgo, fijar precios y descubrir
+        expectativas implícitas del mercado. Tras la crisis de 2008, la <strong>Dodd-Frank Act</strong>
+        obligó a compensar la mayoría de derivados estandarizados en cámaras de compensación
+        centrales (<abbr title="Central Counterparty">CCP</abbr>) para reducir riesgo sistémico.
+      </p>
+    </article>
+
+    <!-- TIPOS PRINCIPALES -->
+    <section class="grid-3 mb-5">
+      <article class="card card-hover">
+        <div class="card-body">
+          <h4 class="card-title">Futuros y Forwards</h4>
+          <p>Obligan a comprar o vender el subyacente en una fecha futura a precio pactado. Los <em>futuros</em> se
+            negocian en mercados organizados; los <em>forwards</em>, <abbr title="Over The Counter">OTC</abbr>.</p>
+        </div>
+      </article>
+      <article class="card card-hover">
+        <div class="card-body">
+          <h4 class="card-title">Opciones</h4>
+          <p>Otorgan el derecho (no la obligación) de comprar (<em>call</em>) o vender (<em>put</em>) a un precio
+            strike. Valuadas con Black-Scholes o modelos de árbol binomial.</p>
+        </div>
+      </article>
+      <article class="card card-hover">
+        <div class="card-body">
+          <h4 class="card-title">Swaps</h4>
+          <p>Intercambio de flujos de caja: los más comunes son
+            <em>interest-rate swaps</em> (IRS) y <em>currency swaps</em>.</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- VIDEO -->
+    <div class="flex-center mb-5">
+      <div class="resp-video">
+        <iframe src="https://www.youtube.com/embed/4SRV9Y2G_gc"
+          title="Introduction to Derivatives" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- MATRIZ RIESGOS -->
+    <h2 class="mb-4">2&nbsp;·&nbsp;Matriz de riesgos</h2>
+    <div class="grid-2 mb-5">
+      <div>
+        <h3 class="h5">Riesgos principales</h3>
+        <ul>
+          <li><strong>Riesgo de mercado:</strong> variaciones en tasas, precios o volatilidad.</li>
+          <li><strong>Riesgo de contraparte:</strong> incumplimiento del participante OTC.</li>
+          <li><strong>Riesgo de liquidez:</strong> incapacidad de cerrar la posición sin distorsionar el precio.</li>
+          <li><strong>Riesgo operacional:</strong> fallos en procesos, sistemas o legalidad del contrato.</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="h5">Herramientas de mitigación</h3>
+        <ol>
+          <li>Márgenes inicial y de variación (<em>initial & variation margin</em>).</li>
+          <li>Garantías colaterales de alta calidad (HQLA).</li>
+          <li>Netting y novación vía CCP.</li>
+          <li>Límites de posición y reportes a repositorios de datos (<em>trade repositories</em>).</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- TABLA EJEMPLOS -->
+    <h2 class="mb-4">3&nbsp;·&nbsp;Principales contratos en CME Group</h2>
+    <table class="table table-bordered table-striped table-sm mb-5">
+      <thead class="table-light">
+        <tr>
+          <th>Contrato</th>
+          <th>Subyacente</th>
+          <th>Tamaño / Tick</th>
+          <th>Finalidad típica</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>E-mini S&amp;P&nbsp;500</td>
+          <td>Índice bursátil</td>
+          <td>50&nbsp;USD * Índice / 0.25&nbsp;pt</td>
+          <td>Exposure equity EUA</td>
+        </tr>
+        <tr>
+          <td>WTI Crude Oil</td>
+          <td>Petróleo ligero</td>
+          <td>1,000&nbsp;barriles / 0.01&nbsp;USD</td>
+          <td>Cobertura productores/refinerías</td>
+        </tr>
+        <tr>
+          <td>Eurodollar (3M)</td>
+          <td>Tasa LIBOR 3M</td>
+          <td>1,000,000&nbsp;USD / 0.25&nbsp;bp</td>
+          <td>Gestión de tasas a corto plazo</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- CRONOLOGÍA -->
+    <h2 class="mb-4">4&nbsp;·&nbsp;Evolución regulatoria</h2>
+    <ol class="timeline mb-5">
+      <li>
+        <h5 class="mb-1">1972&nbsp;·&nbsp;CME lanza contratos financieros</h5>
+        <p class="mb-0">Nacen los primeros futuros sobre divisas tras el colapso de Bretton Woods.</p>
+      </li>
+      <li>
+        <h5 class="mb-1">1998&nbsp;·&nbsp;Lehman Formula</h5>
+        <p class="mb-0">Value-at-Risk se vuelve estándar para capital económico en bancos.</p>
+      </li>
+      <li>
+        <h5 class="mb-1">2009&nbsp;·&nbsp;G-20 Pittsburgh</h5>
+        <p class="mb-0">Compromiso global de compensar derivados estandarizados en CCP.</p>
+      </li>
+      <li>
+        <h5 class="mb-1">2018&nbsp;·&nbsp;Basel III SA-CCR</h5>
+        <p class="mb-0">Nuevo método de cálculo de riesgo de contraparte reemplaza CEM.</p>
+      </li>
+      <li>
+        <h5 class="mb-1">2024&nbsp;·&nbsp;Fase 6 UMR</h5>
+        <p class="mb-0">Requiere márgenes bilaterales para entidades con &gt;8&nbsp;bn&nbsp;USD en nocional agregado.</p>
+      </li>
+    </ol>
+
+    <!-- GRID ESTRATEGIAS -->
+    <h2 class="mb-4">5&nbsp;·&nbsp;Estrategias con derivados</h2>
+    <div class="grid-3 mb-5">
+      <article class="card card-hover">
+        <div class="card-body">
+          <h4 class="card-title">Cobertura Delta-Neutral</h4>
+          <p>Combina posición en opciones con subyacente para aislar vega
+            o capturar gamma intra-día.</p>
+        </div>
+      </article>
+      <article class="card card-hover">
+        <div class="card-body">
+          <h4 class="card-title">Calendar Spread</h4>
+          <p>Compra y venta de futuros con diferentes vencimientos para
+            explotar la curva de <em>backwardation</em> o <em>contango</em>.</p>
+        </div>
+      </article>
+      <article class="card card-hover">
+        <div class="card-body">
+          <h4 class="card-title">Swap-tion overlay</h4>
+          <p>Uso de opciones sobre swaps para limitar pérdidas en portfolios
+            de renta fija ante picos de volatilidad de tasas.</p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-dark text-white py-4 c-footer">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <p class="mb-0">&copy; 2025 Monetaria · Todos los derechos reservados.</p>
+      <nav>
+        <a href="https://github.com/tu-usuario/monetaria-multi" class="text-white text-decoration-none me-3">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="mailto:info@monetaria.edu" class="text-white text-decoration-none">
+          <i class="bi bi-envelope-fill"></i>
+        </a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

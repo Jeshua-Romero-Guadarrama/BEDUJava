@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ataques Especulativos y Ciclos Cambiarios · Monetaria</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+
+  <!-- CSS global compilado -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <!-- ============ NAVBAR (flex + box-model) ============ -->
+  <header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top c-navbar">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Monetaria</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <nav id="mainNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto gap-lg-4">
+          <li class="nav-item"><a class="nav-link" href="teoria.html">Teoría</a></li>
+          <li class="nav-item"><a class="nav-link" href="crisis.html">Crisis</a></li>
+          <li class="nav-item"><a class="nav-link active" href="ataques.html">Ataques</a></li>
+          <li class="nav-item"><a class="nav-link" href="regulacion.html">Regulación</a></li>
+          <li class="nav-item"><a class="nav-link" href="fundamentos.html">Fundamentos</a></li>
+          <li class="nav-item"><a class="nav-link" href="mercados.html">Mercados</a></li>
+          <li class="nav-item"><a class="nav-link" href="cartera.html">Cartera</a></li>
+          <li class="nav-item"><a class="nav-link" href="derivados.html">Derivados</a></li>
+          <li class="nav-item"><a class="nav-link" href="econometria.html">Econometría</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ HERO (full-width, flex center) ============ -->
+  <section class="c-hero">
+    <div>
+      <h1 class="fw-bold display-4">Ataques Especulativos y Ciclos Cambiarios</h1>
+      <p class="lead">Comprende los mecanismos que desencadenan crisis de balanza de pagos y devaluaciones abruptas.</p>
+    </div>
+  </section>
+
+  <!-- ============ MAIN CONTENT ============ -->
+  <main class="container py-5" id="contenido">
+    <!-- INTRO -->
+    <article class="mb-5">
+      <h2>1&nbsp;·&nbsp;¿Qué es un ataque especulativo?</h2>
+      <p>
+        Un ataque especulativo ocurre cuando los inversionistas venden masivamente la moneda o activos
+        denominados en esa moneda ante la expectativa de una devaluación. Si el banco central sostiene
+        un tipo de cambio fijo gastando reservas, el ataque puede vaciar rápidamente sus fondos y obligar
+        a un <strong>cambio de régimen</strong>. El resultado es <em>crisis cambiaria</em>, con fuertes
+        repercusiones sobre precios y actividad económica.
+      </p>
+    </article>
+
+    <!-- MODELOS -->
+    <section class="grid-2 mb-5">
+      <div>
+        <h3>Generaciones de modelos</h3>
+        <ul class="mb-3">
+          <li><strong>1ª Generación</strong> (Krugman, 1979) – Crisis por déficits fiscales persistentes.</li>
+          <li><strong>2ª Generación</strong> (Obstfeld, 1986) – Crisis auto-cumplidas por múltiples equilibrios.</li>
+          <li><strong>3ª Generación</strong> (Chang & Velasco, 2000) – Incluye fragilidad bancaria y descalces.</li>
+          <li><strong>4ª Generación</strong> – Rol de expectativas financieras y estructuras de red (<em>network contagion</em>).</li>
+        </ul>
+        <p>
+          Los modelos más recientes integran <abbr title="Cuentas de capital">BoP-capital</abbr>
+          en DSGE abiertos, permitiendo simular choques de reversión de flujos.
+        </p>
+      </div>
+      <div>
+        <h3>Indicadores de vulnerabilidad</h3>
+        <table class="table table-striped table-bordered table-sm">
+          <thead>
+            <tr>
+              <th>Variable</th>
+              <th>Señal de alerta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Tipo de cambio real</td>
+              <td>Sobrevaluación &gt; 15&nbsp;%</td>
+            </tr>
+            <tr>
+              <td>Reservas / M2</td>
+              <td>&lt; 0.10</td>
+            </tr>
+            <tr>
+              <td>Déficit cuenta corriente</td>
+              <td>&gt; 4&nbsp;% del PIB</td>
+            </tr>
+            <tr>
+              <td>Crecimiento del crédito</td>
+              <td>&gt; 20&nbsp;% interanual</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- VIDEO CENTRADO CON FLEX -->
+    <div class="flex-center mb-5">
+      <div class="resp-video">
+        <iframe src="https://www.youtube.com/embed/DUg1kZbkY2M"
+                title="Currency Crisis Explained" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- CASOS HISTÓRICOS GRID-3 -->
+    <h2 class="mb-4">2&nbsp;·&nbsp;Crisis emblemáticas</h2>
+    <div class="grid-3 mb-5">
+      <article class="card card-hover">
+        <div class="card-body">
+          <h4 class="card-title">México&nbsp;1994 – Efecto Tequila</h4>
+          <p>El peso colapsó tras agotar USD&nbsp;28&nbsp;mm en reservas; el FMI aprobó
+             un paquete de rescate histórico y la deuda externa se disparó.</p>
+        </div>
+      </article>
+      <article class="card card-hover">
+        <div class="card-body">
+          <h4 class="card-title">Sudeste Asiático&nbsp;1997</h4>
+          <p>Tipos de cambio fijos y deuda en dólares generaron devaluaciones en cascada.
+             El baht tailandés fue el primer dominó.</p>
+        </div>
+      </article>
+      <article class="card card-hover">
+        <div class="card-body">
+          <h4 class="card-title">Rusia&nbsp;1998</h4>
+          <p>Default soberano + desplome de los precios del petróleo derivaron en la
+             suspensión de pagos y devaluación del rublo.</p>
+        </div>
+      </article>
+    </div>
+
+    <!-- TIMELINE de EVENTOS RECIENTES -->
+    <h2 class="mb-4">3&nbsp;·&nbsp;Cronología reciente (2018-2025)</h2>
+    <ol class="timeline mb-5">
+      <li>
+        <h5 class="mb-1">Argentina 2018</h5>
+        <p class="mb-0">Pérdida de credibilidad, alza de tasa al 60 % y acuerdo stand-by con el FMI.</p>
+      </li>
+      <li>
+        <h5 class="mb-1">Turquía 2020</h5>
+        <p class="mb-0">Intervenciones encubiertas con swaps y agotamiento de reservas netas.</p>
+      </li>
+      <li>
+        <h5 class="mb-1">Sri Lanka 2022</h5>
+        <p class="mb-0">Insuficiente financiación externa: devaluación del 80 % y escasez de combustibles.</p>
+      </li>
+      <li>
+        <h5 class="mb-1">Nigeria 2024</h5>
+        <p class="mb-0">Unificación cambiaria provocó devaluación de 40 % y brecha paralela aún elevada.</p>
+      </li>
+    </ol>
+
+    <!-- POLÍTICAS DE CONTENCIÓN -->
+    <section class="mb-5">
+      <h2>4&nbsp;·&nbsp;Políticas de mitigación</h2>
+      <div class="grid-2">
+        <div>
+          <h3 class="h5">Mecanismos preventivos</h3>
+          <ul>
+            <li>Régimen cambiario flexible y creíble.</li>
+            <li><abbr title="Impuesto a los flujos de capital de corto plazo">Tobin tax</abbr> selectivo.</li>
+            <li>Colchones de liquidez en moneda dura.</li>
+            <li>Líneas <em>swap</em> con bancos centrales de reserva.</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="h5">Respuesta durante el ataque</h3>
+          <ol>
+            <li>Subir la tasa de referencia para anclar expectativas.</li>
+            <li>Intervención esterilizada y comunicación transparente.</li>
+            <li>Negociar financiamiento puente (FMI, multilaterales).</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-dark text-white py-4 c-footer">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <p class="mb-0">&copy; 2025 Monetaria · Todos los derechos reservados.</p>
+      <nav>
+        <a href="https://github.com/tu-usuario/monetaria-multi" class="text-white text-decoration-none me-3">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="mailto:info@monetaria.edu" class="text-white text-decoration-none">
+          <i class="bi bi-envelope-fill"></i>
+        </a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
