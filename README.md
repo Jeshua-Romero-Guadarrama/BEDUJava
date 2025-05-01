@@ -20,9 +20,9 @@ economia-monetaria-financiera/
 │   ├── econometria.html
 │   ├── assets/
 │   │   ├── img/
-│   │   │   └── hero.jpg        # reemplázala por tu imagen de portada
+│   │   │   └── hero.jpg    
 │   │   └── css/
-│   │       └── style.css       # generado automáticamente
+│   │       └── style.css     
 │   └── js/
 │       └── app.js
 ├── src/
@@ -47,7 +47,7 @@ economia-monetaria-financiera/
 │       │   └── _footer.scss
 │       ├── 7-utilities/
 │       │   └── _utilities.scss
-│       └── style.scss          # punto de entrada
+│       └── style.scss         
 ├── .gitignore
 ├── package.json
 ├── netlify.toml
@@ -71,8 +71,8 @@ utilities/ → helpers (m-*, p-*, text-center…)
 ## Instalación
 
 ```bash
-git clone https://github.com/tu-usuario/monetaria-landing.git
+git clone https://github.com/Jeshua-Romero-Guadarrama/BEDUJava
 cd monetaria-landing
 npm install
-npm run sass   # compila SCSS y observa cambios
+npm run sass  
 ```
